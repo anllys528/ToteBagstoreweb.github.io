@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -6,111 +7,142 @@
     <title>Bolsos y más</title>
     <link rel="stylesheet" href="styles.css">
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-QBLPVPT93V"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-QBLPVPT93V');
-</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QBLPVPT93V"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-QBLPVPT93V');
+    </script>
 </head>
 
 <style>
     body {
-    font-family: "HK Grotesk", Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #fcf8f5; 
-}
+        font-family: "HK Grotesk", Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #fcf8f5; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
+        box-sizing: border-box;
+    }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: "PT Serif", serif; 
-}
+    h1, h2, h3, h4, h5, h6 {
+        font-family: "PT Serif", serif; 
+    }
 
-header {
-    background-color: #000000;
-    color: #f6f1ed;
-    padding: 20px;
-    text-align: center;
-}
+    header {
+        background-color: #000000;
+        color: #f6f1ed;
+        padding: 20px;
+        text-align: center;
+        width: 100%;
+    }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
 
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
+    nav ul li {
+        display: inline;
+        margin-right: 20px;
+    }
 
-nav ul li a {
-    color: #f6f1ed;
-    text-decoration: none;
-}
+    nav ul li a {
+        color: #f6f1ed;
+        text-decoration: none;
+    }
 
-section {
-    padding: 40px 20px;
-    text-align: center;
-}
+    section {
+        padding: 40px 20px;
+        text-align: center;
+        width: 100%;
+        max-width: 1200px;
+    }
 
-h2 {
-    color: #000000;
-}
+    h2 {
+        color: #000000;
+    }
 
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #dd9d4c;
-    color: #f6f1ed;
-    text-decoration: none;
-    margin-top: 20px;
-}
+    .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #dd9d4c;
+        color: #f6f1ed;
+        text-decoration: none;
+        margin-top: 20px;
+    }
 
-.productos figure {
-    display: inline-block;
-    margin: 0 10px;
-}
+    .productos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
 
-.productos img {
-    width: 300px;
-    margin-bottom: 10px;
-}
+    .productos figure {
+        margin: 0;
+    }
 
-.productos figcaption {
-    font-style: italic;
-    color: #000000;
-}
+    .productos img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
 
-.productos p {
-    color: #333333;
-}
+    .productos figcaption {
+        font-style: italic;
+        color: #000000;
+    }
 
-.testimonios {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
-}
+    .productos p {
+        color: #333333;
+    }
 
-.testimonio {
-    text-align: center;
-}
+    .testimonios {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
 
-.testimonio img {
-    width: 150px;
-    border-radius: 50%;
-    margin-bottom: 10px;
-}
+    .testimonio {
+        text-align: center;
+        max-width: 300px;
+    }
 
-footer {
-    background-color: #f6f1ed;
-    color: #000000;
-    text-align: center;
-    padding: 20px;
-}
+    .testimonio img {
+        width: 100%;
+        max-width: 150px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+    }
 
+    footer {
+        background-color: #f6f1ed;
+        color: #000000;
+        text-align: center;
+        padding: 20px;
+        width: 100%;
+    }
+
+    footer form {
+        max-width: 600px;
+        margin: 0 auto;
+        text-align: left;
+    }
+
+    footer form input, footer form textarea {
+        width: 100%;
+        box-sizing: border-box;
+    }
 </style>
+
 <body>
     <header>
         <h1>Bolsos y más</h1>
@@ -129,7 +161,7 @@ footer {
         <h2>¡Bienvenido a Bolsos ToteBag y más!</h2>
         <p>Descubre nuestra colección de bolsos tipo Tote Bag hechos a mano con conciencia. Desde pequeños hasta grandes, tenemos el bolso perfecto para ti.</p>
         <a href="#Mensaje" class="btn">Ver Productos</a>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/8P86n4WTApo?si=onbT-aarQ7vBubh1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>"
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/8P86n4WTApo?si=onbT-aarQ7vBubh1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </section>
 
     <section id="Mensaje">
@@ -141,21 +173,21 @@ footer {
     <section id="reflexivo">
         <h2>Bolsos Reflexivos y Funcionales</h2>
         <div class="productos">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdN-sZxkRuvTKw49PyYrCBXIzgDqCrPrtfCHJJPU_S6jwgSTgMJfHFg7jgyPDoD50odfo&usqp=CAU" alt="Bolso Pequeño" height="220" width="330">
-            <figcaption>Bolso Pequeño</figcaption>
-            <p>Diseños artesanales que alegran el día.</p>
-        </figure>
-        <figure>
-            <img src="https://m.media-amazon.com/images/I/61ebhfLXWnL._AC_SL1500_.jpg" alt="Bolso Mediano" height="220" width="330">
-            <figcaption>Bolso Mediano</figcaption>
-            <p>Artículos informales pero sofisticados para todas.</p>
-        </figure>
-        <figure>
-            <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/7887b318eed6383b6ea47c101a9b969b.jpg?imageMogr2/auto-orient%7CimageView2/2/w/800/q/70/format/webp" alt="Bolso Grande" height="220" width="330">
-            <figcaption>Bolso Grande</figcaption>
-            <p>Elementos de buen gusto para mezclar y combinar para un aspecto elevado.</p>
-        </figure>
-
+            <figure>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdN-sZxkRuvTKw49PyYrCBXIzgDqCrPrtfCHJJPU_S6jwgSTgMJfHFg7jgyPDoD50odfo&usqp=CAU" alt="Bolso Pequeño">
+                <figcaption>Bolso Pequeño</figcaption>
+                <p>Diseños artesanales que alegran el día.</p>
+            </figure>
+            <figure>
+                <img src="https://m.media-amazon.com/images/I/61ebhfLXWnL._AC_SL1500_.jpg" alt="Bolso Mediano">
+                <figcaption>Bolso Mediano</figcaption>
+                <p>Artículos informales pero sofisticados para todas.</p>
+            </figure>
+            <figure>
+                <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/7887b318eed6383b6ea47c101a9b969b.jpg?imageMogr2/auto-orient%7CimageView2/2/w/800/q/70/format/webp" alt="Bolso Grande">
+                <figcaption>Bolso Grande</figcaption>
+                <p>Elementos de buen gusto para mezclar y combinar para un aspecto elevado.</p>
+            </figure>
         </div>
         <a href="#clientes satisfechos" class="btn">Ver Clientes Satisfechos</a>
     </section>
@@ -164,50 +196,39 @@ footer {
         <h2>Clientes Satisfechos</h2>
         <div class="testimonios">
             <div class="testimonio">
-                <img src="https://www.tindleer.com/cdn/shop/products/Feminismo2espanolTotebagMockup4_1024x1024@2x.jpg?v=1642185304" alt="Cliente 1" height="330" width="230">
-                <p>"Sabrina Purdue ¡Me encanta mi nueva tote bag de 'Bolsos y más'! La calidad del material y la atención al detalle son excepcionales. Es tan versátil que la llevo a todas partes, ¡y siempre recibo cumplidos por su diseño elegante!"
-                </p>
+                <img src="https://www.tindleer.com/cdn/shop/products/Feminismo2espanolTotebagMockup4_1024x1024@2x.jpg?v=1642185304" alt="Cliente 1">
+                <p>"Sabrina Purdue ¡Me encanta mi nueva tote bag de 'Bolsos y más'! La calidad del material y la atención al detalle son excepcionales. Es tan versátil que la llevo a todas partes, ¡y siempre recibo cumplidos por su diseño elegante!"</p>
             </div>
             <div class="testimonio">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUsKBM-cfkhSgdcwjMWmNUXDJZioY7pk-vxovznPpHpQ&s" alt="Cliente 2" height="430" width="320">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUsKBM-cfkhSgdcwjMWmNUXDJZioY7pk-vxovznPpHpQ&s" alt="Cliente 2">
                 <p>"Mónica Ortiz ¡Estoy completamente enamorada de mi nueva tote bag de 'Bolsos y más'. No solo es estéticamente hermosa, sino que también es muy práctica.”</p>
             </div>
             <div class="testimonio">
-                <img src="https://img.kwcdn.com/product/enhanced_images/8776c11e7a6379a88f8e5189f7c64d96_enhanced.jpg?imageMogr2/auto-orient%7CimageView2/2/w/800/q/70/format/webp" alt="Cliente 3" height="500" width="410">
-                <p>"Emma Miranda ¡No puedo dejar de admirar mi tote bag de 'Bolsos y más'. La artesanía es impecable y el estilo minimalista encaja perfectamente con mi guardarropa. Además, es increíblemente espaciosa y funcional. ¡Definitivamente una compra que vale la pena!"
-                </p>
+                <img src="https://img.kwcdn.com/product/enhanced_images/8776c11e7a6379a88f8e5189f7c64d96_enhanced.jpg?imageMogr2/auto-orient%7CimageView2/2/w/800/q/70/format/webp" alt="Cliente 3">
+                <p>"Emma Miranda ¡No puedo dejar de admirar mi tote bag de 'Bolsos y más'. La artesanía es impecable y el estilo minimalista encaja perfectamente con mi guardarropa. Además, es increíblemente espaciosa y funcional. ¡Definitivamente una compra que vale la pena!"</p>
             </div>
-
         </div>
         <a href="#contacto" class="btn">Contacto</a>
     </section>
 
-    <from action="#">
-        nombre: 
-        <input type="text"><br>
-        Fecha de nacimiento: <br>
-        <input type="date"> <br>        
-        Subir Foto:
-        <input type="file"><br>
-        <input type="submit" value="subir foto">
-    </from>
+    <section id="contacto">
+    <h3>Contacto</h3>
+    <p>Dirección: la mesa Cundinamarca, Colombia</p>
+    <p>Correo Electrónico: ecototebagstore@gmail.com</p>
+    <p>Teléfono: +57 3174843582</p>
+    <form action="send_mail.php" method="POST" enctype="multipart/form-data">
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+        <label for="comentario">Comentario:</label><br>
+        <textarea id="comentario" name="comentario" rows="4" cols="50" required></textarea><br><br>
+        <label for="file">Subir Foto:</label><br>
+        <input type="file" id="file" name="file" required><br><br>
+        <input type="submit" value="Enviar Comentario">
+    </form>
+</section>
 
-    
     <footer>
-        <h3>Contacto</h3>
-        <p>Dirección: la mesa Cundinamarca, Colombia</p>
-        <p>Correo Electrónico: ecototebagstore@gmail.com</p>
-        <p>Teléfono: +57 3174843582</p>
-
-        <div class="comentarios">
-            <h3>Deja tu comentario</h3>
-            <form action="#" method="POST">
-                <label for="nombre">Nombre:</label><br>
-                <input type="text" id="nombre" name="nombre"><br><br>
-                <label for="comentario">Comentario:</label><br>
-                <textarea id="comentario" name="comentario" rows="4" cols="50"></textarea><br><br>
-                <input type="submit" value="Enviar Comentario">
-            </form>
+        <p>© 2024 Bolsos y más. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>
